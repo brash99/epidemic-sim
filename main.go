@@ -48,8 +48,8 @@ func main() {
 
 	// capturing user input
 	numDays = flag.Int("t", 365, "number of simulation days")
-	width = flag.Int("w", 60, "the number of cells on one side of the image")
-	rate = flag.Float64("r", 0.15, "how likely infection happens")
+	width = flag.Int("w", 100, "the number of cells on one side of the image")
+	rate = flag.Float64("r", 0.50, "how likely infection happens")
 	incubation = flag.Int("n", 5, "how long before the cell becomes infectious")
 	duration = flag.Int("d", 12, "how long the cell remains infectious")
 	fatality = flag.Float64("f", 0.037, "probability of fatality")
@@ -58,9 +58,9 @@ func main() {
 	medIntroduced = flag.Int("m", *numDays, "day when medicine is introduced")
 	medEffectiveness = flag.Float64("e", 0.0, "effectiveness of medicine")
 	//qIntroduced = flag.Int("q", *numDays, "day when quarantine is introduced")
-	qIntroduced = flag.Int("q", 30, "day when quarantine is introduced")
-	qEffectiveness = flag.Float64("g", 0.3, "effectiveness of quarantine")
-	filename = flag.String("name", "q03", "file name of data file")
+	qIntroduced = flag.Int("q", 50, "day when quarantine is introduced")
+	qEffectiveness = flag.Float64("g", 0.5, "effectiveness of quarantine")
+	filename = flag.String("name", "q10005", "file name of data file")
 	flag.Parse()
 
 	// using termbox to control the simulation
