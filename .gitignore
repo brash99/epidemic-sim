@@ -12,7 +12,7 @@
 *.out
 
 # CSV
-*.csv
+#*.csv
 
 # PNG images
 *.png
